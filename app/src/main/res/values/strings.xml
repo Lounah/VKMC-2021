@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VKMC2021</string>
+
+    <string name="taxi">Вызвать такси</string>
 </resources>
