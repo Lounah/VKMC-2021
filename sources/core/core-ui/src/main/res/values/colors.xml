@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="uikit_primary">@color/uikit_navy_blue</color>
+    <color name="uikit_primaryDark">#3F8AE0</color>
+    <color name="uikit_accent">#4986CC</color>
+    <color name="uikit_accent_dark">#DBDCE2</color>
+    <color name="uikit_primary_dark">#131313</color>
+
+    <color name="uikit_navy_blue">#2975cc</color>
+
+    <color name="uikit_black_20">#1A000000</color>
+    <color name="uikit_black_40">#66000000</color>
+    <color name="uikit_black">#000</color>
+    <color name="uikit_red">#DCD81E1E</color>
+    <color name="uikit_gray">#818C99</color>
+    <color name="uikit_gray_sub">#909499</color>
+    <color name="uikit_gray_light">#c4cdd1</color>
+    <color name="uikit_purple">#4A237C</color>
+    <color name="uikit_transparent">#00000000</color>
+    <color name="uikit_white">#fff</color>
+    <color name="uikit_white_6">#F7F7F7</color>
+</resources>
