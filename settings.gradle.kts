@@ -43,3 +43,4 @@ rootProject.name = "VKMC-2021"
 includeBuild("build-logic")
 include(":app")
 include(":sources:core:core-arch")
+include(":sources:core:core-ui")
