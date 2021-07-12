@@ -1,4 +1,4 @@
-package com.lounah.vkmc
+package com.lounah.vkmc.app
 
 import android.app.Application
 

@@ -2,4 +2,6 @@
     <string name="app_name">VKMC2021</string>
 
     <string name="taxi">Вызвать такси</string>
+    <string name="newsfeed">Новости с карточками</string>
+    <string name="voice_mastering">Обработка голоса</string>
 </resources>

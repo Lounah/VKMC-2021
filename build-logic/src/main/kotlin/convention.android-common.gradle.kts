@@ -1,8 +1,10 @@
 @file:Suppress("UnstableApiUsage")
 
 import com.android.build.gradle.BaseExtension
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
+    `kotlin-android`
     id("convention.signing-config")
     id("convention.packaging-options")
 }
@@ -20,12 +22,13 @@ configure<BaseExtension> {
     buildFeatures.viewBinding = true
 
     compileOptions {
-        sourceCompatibility(JavaVersion.VERSION_1_8)
-        targetCompatibility(JavaVersion.VERSION_1_8)
+        setSourceCompatibility(JavaVersion.VERSION_1_8)
+        setTargetCompatibility(JavaVersion.VERSION_1_8)
     }
 
     sourceSets.getByName("main") {
         java.srcDir("src/main/kotlin")
+        java.srcDir("src/main/java")
     }
 
     testOptions {
@@ -33,6 +36,10 @@ configure<BaseExtension> {
             isReturnDefaultValues = true
         }
     }
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
 }
 
 dependencies {

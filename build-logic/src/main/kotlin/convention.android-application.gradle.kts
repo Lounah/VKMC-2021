@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 import com.android.build.gradle.BaseExtension
 
 plugins {
@@ -11,8 +13,7 @@ configure<BaseExtension> {
         applicationId(versions.applicationId)
         versionCode(versions.versionCode)
         versionName(versions.versionName)
-        resConfigs("ru", "en")
-        proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        resConfigs("ru")
     }
 
     buildTypes {
@@ -29,6 +30,15 @@ configure<BaseExtension> {
             isMinifyEnabled = false
             applicationIdSuffix(".dev")
             setMatchingFallbacks("release")
+        }
+    }
+
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            include("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
+            isUniversalApk = true
         }
     }
 }

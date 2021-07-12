@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_height="wrap_content">
+    android:orientation="vertical">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/taxi"
+        style="@style/Button.Mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/taxi" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newsfeed"
         style="@style/Button.Mini"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_margin="16dp"
-        android:text="@string/taxi" />
+        android:text="@string/newsfeed" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/voice"
+        style="@style/Button.Mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/voice_mastering" />
 
 </LinearLayout>

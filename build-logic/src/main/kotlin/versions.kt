@@ -11,11 +11,11 @@ object versions {
     @Suppress("unused")
     val versionCode get() = 2306
 
-    const val compileSdk = 29
+    const val compileSdk = 30
 
-    const val targetSdk = 29
+    const val targetSdk = 30
 
-    const val minSdk = 23
+    const val minSdk = 21
 
     const val minSdkCompat = 21
 
