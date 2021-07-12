@@ -4,6 +4,7 @@ import com.android.build.gradle.BaseExtension
 
 plugins {
     id("convention.signing-config")
+    id("convention.packaging-options")
 }
 
 configure<BaseExtension> {
