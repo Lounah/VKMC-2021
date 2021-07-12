@@ -1,0 +1,18 @@
+[versions]
+
+# Network
+okhttp = "4.9.0"
+retrofit = "2.9.0"
+gson = "2.8.6"
+viewbindingDelegate = "1.4.7"
+
+
+[libraries]
+
+# Network
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okhttpLogging = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofitGson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+#viewBindingDelegate = { module = "com.github.kirich1409:viewbindingpropertydelegate-noreflection", version.ref = "viewBindingDelegate" }
